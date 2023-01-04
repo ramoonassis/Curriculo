@@ -1,0 +1,166 @@
+.formacao {
+    background-color: #141414;
+
+}
+
+.formacao-conteudo {
+    padding-left: 50px;
+    padding-right: 50px;  
+
+
+   
+ 
+  }
+
+.formacao-container {
+    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    color:white;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+  
+
+}
+
+.subtitulo-formacao { 
+
+        font-size: 8.5rem;
+        color: #e6e6e6; 
+        margin:0px;
+        text-transform:uppercase;
+        color:black;
+        max-width:10ch;
+        word-break: break-all;
+ }
+
+ .formacao-texto {
+    font-size: 1.5rem;
+    text-align: left;
+    max-width: 40ch;
+    color: #666;
+    margin-bottom: 50px;
+ }
+
+ .formacao-estudo {
+    background-color: #000000;
+    text-align: center;
+    color: black;
+    height: 120px;
+    width: 120px;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 0.85rem;
+    position:relative;
+    margin-left: 145px;
+    margin-bottom: 30px;
+
+
+
+
+
+
+
+
+
+ }
+ .cor {
+    color: white;
+ }
+
+ .formacao-estudo span {
+    color: #A3A3A3;
+ }
+ .formacao-estudo h3 {
+    color: #ffffff;
+
+ }
+
+
+ .formacao-estudo h3::after {
+    content: '';
+    display:block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(green, lightgreen);
+    position: absolute;
+    left: -2px;
+    top: 40px;
+    
+}
+.curso-intensivo {
+    color:#666;
+    text-transform:uppercase;
+    font-size: 0.90rem;
+    position: relative;
+    }
+
+.curso-intensivo::after {
+    content: '';
+    display:block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/cursos.svg) no-repeat;
+    position:absolute;
+    left:-30px;
+    top:-5px;
+
+}
+
+.cursos {
+    display:grid;
+  
+    align-items: center;
+    text-align: start;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.cursos span {
+    grid-column: 2;
+    color:#666;
+    margin-left:40px;
+}
+
+.idiomas {
+    color:#666;
+    text-transform:uppercase;
+    font-size: 0.90rem;
+    position: relative;
+
+}
+.idiomas::after {
+    content: '';
+    display:block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/idiomas.svg) no-repeat;
+    position:absolute;
+    left:-30px;
+    top:-5px;
+
+}
+
+.idioma-cor {
+    color:#666
+}
+
+@media (max-width:800px) {
+    .formacao-container {
+        grid-template-columns: 1fr;
+    }
+    .subtitulo-formacao {
+            font-size: 3rem;
+             color: white;
+             text-transform:none;
+             word-break: normal;
+             align-items: center;
+             margin-left: 40px;
+}
+
+    .formacao-texto {
+        font-size: 20px;
+    }
+  
+     }
